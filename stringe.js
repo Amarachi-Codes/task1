@@ -1,15 +1,23 @@
-Warmup-1 -- stringE
-Return true if the given string contains between 1 and 3 'e' chars.
+// Warmup-1 -- stringE
+// Return true if the given string contains between 1 and 3 'e' chars.
 
-Examples
+// Examples
 
-stringE('Hello') → true
-stringE('Heelle') → true
-stringE('Heelele') → false
+// stringE('Hello') → true
+// stringE('Heelle') → true
+// stringE('Heelele') → false
 
 function stringE(str){
     const letter = "e"
-    if(letter.includes(str) >=1 || letter.includes(str) <=3){
-    return true
-    } return false 
-  }
+    let letterCount = 0
+    for(let i = 0; i < str.length;i++){ 
+        let chara = str.charAt(i)
+        if(letter.includes(chara)){ 
+        letterCount++
+    } 
+   
+} if(letterCount >= 1 && letterCount <=3){
+    return "true"
+} 
+return "false"
+  }console.log(stringE('Heelele'));
