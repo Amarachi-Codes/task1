@@ -10,8 +10,10 @@
 // endOther('abc', 'abXabc') → true
 
 function endOther(a, b){
-    a = a.toLowerCase()
-    b = b.toLowerCase()
- if(b.includes(a))()
+    const strA = a.toLowerCase()
+    const strB = b.toLowerCase()
+    if(strB.endsWith(strA) || strA.endsWith(strB) ){
+        return true
+    }return false
 
-  }console.log(endOther('Hiabc', 'abc'));
+  }console.log(endOther('AbC', 'HiaBc'));
